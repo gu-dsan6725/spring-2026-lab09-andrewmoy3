@@ -1,0 +1,287 @@
+2026-04-01 16:10:28,006,p9984,{agent.py:432},INFO,Initializing Agent - user: demo_user, agent: memory-agent, session: 7e2866bf
+2026-04-01 16:10:28,006,p9984,{memory_manager.py:142},INFO,Initializing multi-tenant MemoryManager with Mem0 cloud platform
+2026-04-01 16:10:28,343,p9984,{memory_manager.py:147},INFO,Mem0 cloud client initialized successfully
+2026-04-01 16:10:28,343,p9984,{agent.py:452},INFO,Memory manager initialized for multi-tenant operation
+2026-04-01 16:10:28,345,p9984,{agent.py:167},INFO,Created search_memory tool
+2026-04-01 16:10:28,346,p9984,{agent.py:239},INFO,Created insert_memory tool
+2026-04-01 16:10:28,348,p9984,{agent.py:320},INFO,Created web_search tool
+2026-04-01 16:10:28,348,p9984,{agent.py:480},INFO,Initialized Agent with model claude-haiku-4-5-20251001 and 3 tools (2 memory + 1 web search)
+2026-04-01 16:10:28,349,p9984,{agent.py:512},INFO,Processing user input (length: 72 chars)
+2026-04-01 16:10:28,350,p9984,{metrics.py:557},INFO,Creating Strands MetricsClient
+[92m16:10:28 - LiteLLM:INFO[0m: utils.py:3932 - 
+LiteLLM completion() model= claude-haiku-4-5-20251001; provider = anthropic
+2026-04-01 16:10:28,393,p9984,{utils.py:3932},INFO,
+LiteLLM completion() model= claude-haiku-4-5-20251001; provider = anthropic
+2026-04-01 16:10:29,639,p9984,{agent.py:206},INFO,[TOOL INVOKED] insert_memory called with content='User's name is Alice. She is a software engineer specializing in Python....', metadata={'type': 'preference_memory', 'category': 'user_profile'}, user_id=demo_user, run_id=7e2866bf
+2026-04-01 16:10:29,639,p9984,{agent.py:208},INFO,Inserting explicit memory: 'User's name is Alice. She is a software engineer specializing in Python....'
+2026-04-01 16:10:29,639,p9984,{memory_manager.py:190},INFO,Inserting memory for user=demo_user, agent=memory-agent, session=7e2866bf: 'User's name is Alice. She is a software engineer specializing in Python....'
+2026-04-01 16:10:30,053,p9984,{memory_manager.py:211},INFO,Memory stored for user=demo_user with context (agent=memory-agent, session=7e2866bf)
+2026-04-01 16:10:30,053,p9984,{memory_manager.py:221},INFO,Memory inserted successfully
+2026-04-01 16:10:30,053,p9984,{agent.py:226},INFO,Successfully inserted memory
+[92m16:10:30 - LiteLLM:INFO[0m: utils.py:3932 - 
+LiteLLM completion() model= claude-haiku-4-5-20251001; provider = anthropic
+2026-04-01 16:10:30,056,p9984,{utils.py:3932},INFO,
+LiteLLM completion() model= claude-haiku-4-5-20251001; provider = anthropic
+2026-04-01 16:10:31,486,p9984,{agent.py:521},INFO,Received response (length: 366 chars)
+2026-04-01 16:10:31,899,p9984,{agent.py:512},INFO,Processing user input (length: 61 chars)
+[92m16:10:31 - LiteLLM:INFO[0m: utils.py:3932 - 
+LiteLLM completion() model= claude-haiku-4-5-20251001; provider = anthropic
+2026-04-01 16:10:31,901,p9984,{utils.py:3932},INFO,
+LiteLLM completion() model= claude-haiku-4-5-20251001; provider = anthropic
+2026-04-01 16:10:32,853,p9984,{agent.py:206},INFO,[TOOL INVOKED] insert_memory called with content='Alice is working on a machine learning project using scikit-learn....', metadata={'type': 'episodic_memory', 'category': 'current_project'}, user_id=demo_user, run_id=7e2866bf
+2026-04-01 16:10:32,854,p9984,{agent.py:208},INFO,Inserting explicit memory: 'Alice is working on a machine learning project using scikit-learn....'
+2026-04-01 16:10:32,854,p9984,{memory_manager.py:190},INFO,Inserting memory for user=demo_user, agent=memory-agent, session=7e2866bf: 'Alice is working on a machine learning project using scikit-learn....'
+2026-04-01 16:10:33,251,p9984,{memory_manager.py:211},INFO,Memory stored for user=demo_user with context (agent=memory-agent, session=7e2866bf)
+2026-04-01 16:10:33,251,p9984,{memory_manager.py:221},INFO,Memory inserted successfully
+2026-04-01 16:10:33,252,p9984,{agent.py:226},INFO,Successfully inserted memory
+[92m16:10:33 - LiteLLM:INFO[0m: utils.py:3932 - 
+LiteLLM completion() model= claude-haiku-4-5-20251001; provider = anthropic
+2026-04-01 16:10:33,254,p9984,{utils.py:3932},INFO,
+LiteLLM completion() model= claude-haiku-4-5-20251001; provider = anthropic
+2026-04-01 16:10:35,306,p9984,{agent.py:521},INFO,Received response (length: 949 chars)
+2026-04-01 16:10:35,688,p9984,{agent.py:512},INFO,Processing user input (length: 30 chars)
+[92m16:10:35 - LiteLLM:INFO[0m: utils.py:3932 - 
+LiteLLM completion() model= claude-haiku-4-5-20251001; provider = anthropic
+2026-04-01 16:10:35,690,p9984,{utils.py:3932},INFO,
+LiteLLM completion() model= claude-haiku-4-5-20251001; provider = anthropic
+2026-04-01 16:10:36,411,p9984,{agent.py:521},INFO,Received response (length: 149 chars)
+2026-04-01 16:10:36,812,p9984,{agent.py:512},INFO,Processing user input (length: 102 chars)
+[92m16:10:36 - LiteLLM:INFO[0m: utils.py:3932 - 
+LiteLLM completion() model= claude-haiku-4-5-20251001; provider = anthropic
+2026-04-01 16:10:36,815,p9984,{utils.py:3932},INFO,
+LiteLLM completion() model= claude-haiku-4-5-20251001; provider = anthropic
+2026-04-01 16:10:38,036,p9984,{agent.py:206},INFO,[TOOL INVOKED] insert_memory called with content='Alice's favorite programming language is Python and she prefers clean, maintainable code....', metadata={'type': 'preference_memory', 'category': 'coding_preferences'}, user_id=demo_user, run_id=7e2866bf
+2026-04-01 16:10:38,037,p9984,{agent.py:208},INFO,Inserting explicit memory: 'Alice's favorite programming language is Python and she prefers clean, maintainable code....'
+2026-04-01 16:10:38,037,p9984,{memory_manager.py:190},INFO,Inserting memory for user=demo_user, agent=memory-agent, session=7e2866bf: 'Alice's favorite programming language is Python and she prefers clean, maintainable code....'
+2026-04-01 16:10:38,420,p9984,{memory_manager.py:211},INFO,Memory stored for user=demo_user with context (agent=memory-agent, session=7e2866bf)
+2026-04-01 16:10:38,420,p9984,{memory_manager.py:221},INFO,Memory inserted successfully
+2026-04-01 16:10:38,420,p9984,{agent.py:226},INFO,Successfully inserted memory
+[92m16:10:38 - LiteLLM:INFO[0m: utils.py:3932 - 
+LiteLLM completion() model= claude-haiku-4-5-20251001; provider = anthropic
+2026-04-01 16:10:38,423,p9984,{utils.py:3932},INFO,
+LiteLLM completion() model= claude-haiku-4-5-20251001; provider = anthropic
+2026-04-01 16:10:40,388,p9984,{agent.py:521},INFO,Received response (length: 738 chars)
+2026-04-01 16:10:40,908,p9984,{agent.py:512},INFO,Processing user input (length: 48 chars)
+[92m16:10:40 - LiteLLM:INFO[0m: utils.py:3932 - 
+LiteLLM completion() model= claude-haiku-4-5-20251001; provider = anthropic
+2026-04-01 16:10:40,912,p9984,{utils.py:3932},INFO,
+LiteLLM completion() model= claude-haiku-4-5-20251001; provider = anthropic
+======================================================================
+Memory Agent Demo - Mem0 + Strands + LiteLLM
+======================================================================
+
+Initializing agent with semantic memory...
+
+NOTE: You may see 'tool_use_failed' ValueError messages during execution.
+      These are harmless warnings from LiteLLM/Groq integration and are
+      automatically handled by retry logic. The agent works correctly.
+
+Agent initialized! Features:
+  - Automatic background storage of all conversations
+  - Semantic search across conversation history
+  - Explicit memory insertion for important facts
+  - Web search for current information (DuckDuckGo)
+  - Qdrant vector database with HuggingFace embeddings
+
+
+──────────────────────────────────────────────────────────────────────
+Turn 1: 1. Introduction
+──────────────────────────────────────────────────────────────────────
+User: Hi! My name is Alice and I'm a software engineer specializing in Python.
+
+
+Tool #1: insert_memory
+Nice to meet you, Alice! It's great to connect with a Python specialist. I'm here to help with whatever you need—whether that's discussing Python concepts, debugging code, exploring software engineering best practices, or anything else you have in mind.
+
+Feel free to ask me questions, brainstorm ideas, or work through problems together. What brings you here today?Assistant: Nice to meet you, Alice! It's great to connect with a Python specialist. I'm here to help with whatever you need—whether that's discussing Python concepts, debugging code, exploring software engineering best practices, or anything else you have in mind.
+
+Feel free to ask me questions, brainstorm ideas, or work through problems together. What brings you here today?
+
+──────────────────────────────────────────────────────────────────────
+Turn 2: 2. Share project info
+──────────────────────────────────────────────────────────────────────
+User: I'm working on a machine learning project using scikit-learn.
+
+
+Tool #2: insert_memory
+Excellent! Scikit-learn is a fantastic library for machine learning work. I'd be happy to help you with your project!
+
+I can assist you with:
+- **Model selection and implementation** - choosing the right algorithms for your problem
+- **Data preprocessing** - feature scaling, encoding, handling missing values, etc.
+- **Model training and evaluation** - cross-validation, hyperparameter tuning, performance metrics
+- **Pipeline construction** - building efficient ML workflows
+- **Troubleshooting** - debugging issues and optimizing performance
+- **Best practices** - design patterns and scikit-learn conventions
+
+What specific aspect of your project are you working on right now? Are you:
+- Just getting started and need help with setup?
+- Building a classifier, regressor, or clustering model?
+- Facing a particular challenge or bug?
+- Looking for advice on improving your approach?
+
+Let me know what you're working on and I'll do my best to help!Assistant: Excellent! Scikit-learn is a fantastic library for machine learning work. I'd be happy to help you with your project!
+
+I can assist you with:
+- **Model selection and implementation** - choosing the right algorithms for your problem
+- **Data preprocessing** - feature scaling, encoding, handling missing values, etc.
+- **Model training and evaluation** - cross-validation, hyperparameter tuning, performance metrics
+- **Pipeline construction** - building efficient ML workflows
+- **Troubleshooting** - debugging issues and optimizing performance
+- **Best practices** - design patterns and scikit-learn conventions
+
+What specific aspect of your project are you working on right now? Are you:
+- Just getting started and need help with setup?
+- Building a classifier, regressor, or clustering model?
+- Facing a particular challenge or bug?
+- Looking for advice on improving your approach?
+
+Let me know what you're working on and I'll do my best to help!
+
+──────────────────────────────────────────────────────────────────────
+Turn 3: 3. Memory recall (should search automatically)
+──────────────────────────────────────────────────────────────────────
+User: What's my name and occupation?
+
+Your name is Alice, and you're a software engineer specializing in Python. You're currently working on a machine learning project using scikit-learn!Assistant: Your name is Alice, and you're a software engineer specializing in Python. You're currently working on a machine learning project using scikit-learn!
+
+──────────────────────────────────────────────────────────────────────
+Turn 4: 4. Explicit memory request
+──────────────────────────────────────────────────────────────────────
+User: Please remember that my favorite programming language is Python and I prefer clean, maintainable code.
+
+
+Tool #3: insert_memory
+Got it! I've remembered that Python is your favorite language and that you value clean, maintainable code. This is really helpful context—it means when I help you with your scikit-learn project, I'll keep those principles in mind. I'll focus on:
+
+- **Clean code practices** - following PEP 8 standards, clear variable names, proper structure
+- **Maintainability** - writing code that's easy to understand, modify, and test
+- **Best practices** - using idiomatic Python and scikit-learn conventions
+- **Documentation** - including helpful comments and docstrings where appropriate
+
+This will help ensure your ML project is not just functional, but also professional and sustainable as it grows. Looking forward to working with you on this!Assistant: Got it! I've remembered that Python is your favorite language and that you value clean, maintainable code. This is really helpful context—it means when I help you with your scikit-learn project, I'll keep those principles in mind. I'll focus on:
+
+- **Clean code practices** - following PEP 8 standards, clear variable names, proper structure
+- **Maintainability** - writing code that's easy to understand, modify, and test
+- **Best practices** - using idiomatic Python and scikit-learn conventions
+- **Documentation** - including helpful comments and docstrings where appropriate
+
+This will help ensure your ML project is not just functional, but also professional and sustainable as it grows. Looking forward to working with you on this!
+
+──────────────────────────────────────────────────────────────────────
+Turn 5: 5. Retrieve preferences (should search memory)
+──────────────────────────────────────────────────────────────────────
+User: What are my preferences when it comes to coding?
+
+Based on what you've told me, your coding preferences are:
+
+1. **Favorite programming language**: Python
+2. **Code quality focus**: You prefer clean, maintainable code
+
+These preferences2026-04-01 16:10:43,644,p9984,{agent.py:521},INFO,Received response (length: 424 chars)
+2026-04-01 16:10:44,127,p9984,{agent.py:512},INFO,Processing user input (length: 30 chars)
+[92m16:10:44 - LiteLLM:INFO[0m: utils.py:3932 - 
+LiteLLM completion() model= claude-haiku-4-5-20251001; provider = anthropic
+2026-04-01 16:10:44,131,p9984,{utils.py:3932},INFO,
+LiteLLM completion() model= claude-haiku-4-5-20251001; provider = anthropic
+2026-04-01 16:10:47,599,p9984,{agent.py:521},INFO,Received response (length: 1676 chars)
+2026-04-01 16:10:47,989,p9984,{agent.py:512},INFO,Processing user input (length: 35 chars)
+[92m16:10:47 - LiteLLM:INFO[0m: utils.py:3932 - 
+LiteLLM completion() model= claude-haiku-4-5-20251001; provider = anthropic
+2026-04-01 16:10:47,993,p9984,{utils.py:3932},INFO,
+LiteLLM completion() model= claude-haiku-4-5-20251001; provider = anthropic
+2026-04-01 16:10:48,795,p9984,{agent.py:521},INFO,Received response (length: 182 chars)
+2026-04-01 16:10:49,156,p9984,{memory_manager.py:450},INFO,Retrieving all memories for user=demo_user
+2026-04-01 16:10:49,627,p9984,{memory_manager.py:487},INFO,Retrieved 0 total memories for user=demo_user
+2026-04-01 16:10:49,628,p9984,{agent.py:625},INFO,Retrieved 0 memories
+ align really well with professional software engineering practices, and they'll serve your scikit-learn project well. Clean and maintainable code makes it easier to debug, extend, and collaborate with others on machine learning projects.Assistant: Based on what you've told me, your coding preferences are:
+
+1. **Favorite programming language**: Python
+2. **Code quality focus**: You prefer clean, maintainable code
+
+These preferences align really well with professional software engineering practices, and they'll serve your scikit-learn project well. Clean and maintainable code makes it easier to debug, extend, and collaborate with others on machine learning projects.
+
+──────────────────────────────────────────────────────────────────────
+Turn 6: 6. New topic (no memory search needed)
+──────────────────────────────────────────────────────────────────────
+User: Tell me about neural networks.
+
+Neural networks are a powerful machine learning model inspired by how biological brains work. Here's an overview:
+
+## **Basic Concept**
+Neural networks consist of interconnected layers of artificial "neurons" that process information. Data flows through these layers, with each neuron applying weighted transformations and activation functions to learn patterns.
+
+## **Key Components**
+- **Input Layer**: Receives raw features
+- **Hidden Layers**: Process and transform data through learned weights
+- **Output Layer**: Produces predictions
+- **Weights & Biases**: Parameters the network learns during training
+- **Activation Functions**: Introduce non-linearity (ReLU, sigmoid, tanh, etc.)
+
+## **Types of Neural Networks**
+- **Feedforward Neural Networks (MLPs)**: Basic architecture, good for structured data
+- **Convolutional Neural Networks (CNNs)**: Excellent for image processing
+- **Recurrent Neural Networks (RNNs)**: Handle sequential data (text, time series)
+- **Transformers**: State-of-the-art for NLP tasks
+
+## **Training Process**
+1. Forward pass: Data flows through the network
+2. Calculate loss: Measure prediction error
+3. Backpropagation: Compute gradients
+4. Update weights: Adjust parameters to minimize loss
+5. Repeat until convergence
+
+## **Relevant to Your Work**
+Since you're using **scikit-learn**, note that it has `MLPClassifier` and `MLPRegressor` for basic neural networks. However, for more complex neural network projects, many Python developers use **TensorFlow/Keras** or **PyTorch** for greater flexibility.
+
+Is there a specific aspect of neural networks you'd like to explore further, or are you considering implementing them in your project?Assistant: Neural networks are a powerful machine learning model inspired by how biological brains work. Here's an overview:
+
+## **Basic Concept**
+Neural networks consist of interconnected layers of artificial "neurons" that process information. Data flows through these layers, with each neuron applying weighted transformations and activation functions to learn patterns.
+
+## **Key Components**
+- **Input Layer**: Receives raw features
+- **Hidden Layers**: Process and transform data through learned weights
+- **Output Layer**: Produces predictions
+- **Weights & Biases**: Parameters the network learns during training
+- **Activation Functions**: Introduce non-linearity (ReLU, sigmoid, tanh, etc.)
+
+## **Types of Neural Networks**
+- **Feedforward Neural Networks (MLPs)**: Basic architecture, good for structured data
+- **Convolutional Neural Networks (CNNs)**: Excellent for image processing
+- **Recurrent Neural Networks (RNNs)**: Handle sequential data (text, time series)
+- **Transformers**: State-of-the-art for NLP tasks
+
+## **Training Process**
+1. Forward pass: Data flows through the network
+2. Calculate loss: Measure prediction error
+3. Backpropagation: Compute gradients
+4. Update weights: Adjust parameters to minimize loss
+5. Repeat until convergence
+
+## **Relevant to Your Work**
+Since you're using **scikit-learn**, note that it has `MLPClassifier` and `MLPRegressor` for basic neural networks. However, for more complex neural network projects, many Python developers use **TensorFlow/Keras** or **PyTorch** for greater flexibility.
+
+Is there a specific aspect of neural networks you'd like to explore further, or are you considering implementing them in your project?
+
+──────────────────────────────────────────────────────────────────────
+Turn 7: 7. Recall previous context (should search memory)
+──────────────────────────────────────────────────────────────────────
+User: What project did I mention earlier?
+
+You mentioned earlier that you're working on a **machine learning project using scikit-learn**.
+
+Is there anything specific about that project you'd like to discuss or get help with?Assistant: You mentioned earlier that you're working on a **machine learning project using scikit-learn**.
+
+Is there anything specific about that project you'd like to discuss or get help with?
+
+======================================================================
+Demo completed!
+======================================================================
+
+Memory Statistics:
+  Total memories stored: 0
+
+
+Note: Agent automatically stores conversations and intelligently
+decides when to search memory based on context.
