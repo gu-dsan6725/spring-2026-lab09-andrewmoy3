@@ -22,6 +22,9 @@ from strands.telemetry import StrandsTelemetry
 from strands.tools.decorator import tool
 
 
+from strands.tools.mcp import MCPClient
+from mcp.client.streamable_http import streamablehttp_client
+
 # Configure logging
 logging.basicConfig(
     level=logging.INFO,
@@ -105,6 +108,9 @@ def _setup_observability() -> TracerProvider:
     return tracer_provider
 
 
+def create_streamable_http_transport():
+    return streamablehttp_client("https://mcp.context7.com/mcp")
+
 def _create_agent() -> Agent:
     """
     Create and configure the Strands agent.
@@ -125,7 +131,7 @@ def _create_agent() -> Agent:
     # Configure the agent with system prompt
     system_prompt = """You are a helpful AI assistant with access to DuckDuckGo web search.
 
-Use the DuckDuckGo search tool to find current information, news, and answers to questions.
+Use the DuckDuckGo search tool or MCP tools to find current information, news, and answers to questions.
 Provide clear, accurate, and helpful responses based on the search results.
 Always cite your sources when using search results."""
 
@@ -139,12 +145,24 @@ Always cite your sources when using search results."""
         max_tokens=4096
     )
 
-    # Create agent - observability is already configured globally via TracerProvider
+
+    streamable_http_mcp_client = MCPClient(create_streamable_http_transport)
+    with streamable_http_mcp_client:
+        mcp_tools = streamable_http_mcp_client.list_tools_sync()
+
+    print(mcp_tools)
     agent = Agent(
         system_prompt=system_prompt,
         model=model,
-        tools=[duckduckgo_search]
+        tools=[duckduckgo_search] + mcp_tools  # Combine DuckDuckGo and MCP tools
     )
+
+    # # Create agent - observability is already configured globally via TracerProvider
+    # agent = Agent(
+    #     system_prompt=system_prompt,
+    #     model=model,
+    #     tools=[duckduckgo_search]
+    # )
 
     logger.info("Agent created successfully with Braintrust observability")
     return agent

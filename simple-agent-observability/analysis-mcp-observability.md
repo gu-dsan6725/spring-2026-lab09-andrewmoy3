@@ -1,0 +1,3 @@
+![](./analysis-mcp-observability.md)
+
+I connected to the suggested context7 mcp server, which exposed two tools for use by our client: resolve-library-id and query-docs. Now, the agent has access to three different tools when responding to a prompt, the two mcp tools as well as duckduckgo_search. The agent is responsible for deciding which tool is the most appropriate and calling that tool, which can be seen in the braintrust screenshot in which the agent decided that the mcp server tools were better for answering a FastAPI question.
